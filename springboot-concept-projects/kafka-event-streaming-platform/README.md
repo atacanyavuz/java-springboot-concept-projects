@@ -29,4 +29,4 @@ This project demonstrates a simple microservice communication architecture using
 ---
 
 ## 📚 Project Structure
-![System Architecture Diagram](/resources/diagrams/Kafka%20Event%20Streaming%20Platform%20Project.png)
+![System Architecture Diagram](/springboot-concept-projects/kafka-event-streaming-platform/resources/diagrams/Kafka%20Event%20Streaming%20Platform%20Project.png)
