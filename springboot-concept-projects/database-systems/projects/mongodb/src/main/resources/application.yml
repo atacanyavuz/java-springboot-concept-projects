@@ -1,0 +1,23 @@
+server:
+  port: 8030
+spring:
+  application:
+    name: mongodb
+  data:
+    mongodb:
+      username: atacanyavuz
+      password: password
+      host: localhost
+      port: 27017
+      database: message
+      authentication-database: admin
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: mongoDatabaseGroup
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: '*'
+        spring.json.type.mapping: broadcastEvent:com.atacanyavuz.databasesystems.messaging.event.MessageEvent
