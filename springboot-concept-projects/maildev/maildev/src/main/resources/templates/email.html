@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Email Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .body {
+            padding: 30px;
+            color: #333333;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            color: #555555;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="header">
+        <span th:text="${mailHeader}"></span></p>
+    </div>
+
+    <div class="body">
+        <span th:text="${mailBody}"></span></p>
+    </div>
+
+    <div class="footer">
+        &copy; Atacan Yavuz. All rights reserved.<br><br>
+        <a href="https://github.com/atacanyavuz" target="_blank" style="text-decoration: none; color: #333;">
+            <i class="fab fa-github" style="font-size: 24px;"></i> GitHub Profile
+        </a>
+    </div>
+</div>
+</body>
+
+</html>

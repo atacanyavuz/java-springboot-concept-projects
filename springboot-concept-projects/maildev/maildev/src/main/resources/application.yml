@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: maildev
+  mail:
+    host: localhost
+    port: 1025
+    username: atacanyavuz
+    password: pass
+    properties:
+      mail:
+        smtp:
+          trust: "*"
+        auth: true
+        starttls:
+          enabled: true
+        connectiontimeout: 5000
+        timeout: 3000
+        writetimeout: 5000
